@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Bruno Pereira" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perfil</title>
+
+    <link rel="stylesheet" href="/style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div>
+      <h1>Perfil do Estudante</h1>
+      <img
+        id="foto"
+        class="imagem"
+        src="/assets/eu.png"
+        alt="Bruno Pereira"
+        onclick="zoom()"
+      />
+    </div>
+    <div>
+      <h2>Bruno Leandro Pereira</h2>
+      <ul class="info">
+        <li><b>Nome: </b> Bruno Leandro Pereira</li>
+        <li><b>Endereço: </b>Rua Miguel Giometti, 790</li>
+        <li><b>Hobbies: </b>Programar, jogar cs e jogar bola</li>
+        <li><b>Filme favorito:</b> Jogador número um</li>
+        <li><b>Comida: </b>Ifood</li>
+      </ul>
+    </div>
+    <br />
+    <div>
+      <table border="1px solid">
+        <tr>
+          <td>DISCIPLINA</td>
+          <td>DIA/HORÁRIO</td>
+          <td>SALA</td>
+          <td>PROFESSOR</td>
+          <td>PRÉ-REQUISITO</td>
+        </tr>
+        <tr>
+          <td>DESENVOLVIMENTO DE SOFTWARE PARA WEB I</td>
+          <td>Segunda - 14h-18h</td>
+          <td>LE6</td>
+          <td>Alan</td>
+          <td>Banco de Dados</td>
+        </tr>
+        <tr>
+          <td>APRENDIZADO MÁQUINA I</td>
+          <td>Terça - 14h-18h</td>
+          <td>AT9 - Sala 215</td>
+          <td>Alan e Murilo</td>
+          <td>Inteligência Artificial</td>
+        </tr>
+        <tr>
+          <td>ENGENHARIA DE SOFTWARE II</td>
+          <td>Quarta - 16h-18h<br />Quinta - 14h-16h</td>
+          <td>AT9 - Sala 199</td>
+          <td>Fabiano</td>
+          <td>Engenharia de Software I</td>
+        </tr>
+        <tr>
+          <td>REDES DE COMPUTADORES</td>
+          <td>Sexta - 08h-12h</td>
+          <td>LE2</td>
+          <td>Paulo</td>
+          <td>Sistema Operacional</td>
+        </tr>
+        <tr>
+          <td>CÁLCULO NUMÉRICO</td>
+          <td>Terça - 08h-10h<br />Quinta - 10h-12h</td>
+          <td>AT9 - Sala 218</td>
+          <td>Saulo</td>
+          <td>Cálculo I</td>
+        </tr>
+      </table>
+      <br />
+    </div>
+    <div id="formulario">
+      <h2>Entre em contato</h2>
+      <form action="">
+        <label for="fname">Nome completo:</label>
+        <input type="text" maxlength="25" name="fname" />
+        <br /><br />
+        <label for="textarea">Escreva sua mensagem:</label>
+        <textarea
+          type="textarea"
+          rows="10"
+          cols="50"
+          name="textarea"
+        ></textarea>
+        <br /><br />
+        <button id="enviar">Enviar</button>
+      </form>
+    </div>
+  </body>
+</html>
